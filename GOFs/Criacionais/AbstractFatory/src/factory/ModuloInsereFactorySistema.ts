@@ -1,7 +1,7 @@
 import { ModuloInsereFactory } from "./ModuloInsereFactory";
-import { Insere } from "../domain/interacao/Insere";
-import { InsereRelato } from "../domain/interacao/InsereRelato";
-import { InsereAnuncio } from "../domain/interacao/InsereAnuncio";
+import { Insere } from "../regras/interacao/Insere";
+import { InsereRelato } from "../regras/interacao/InsereRelato";
+import { InsereAnuncio } from "../regras/interacao/InsereAnuncio";
 
 export class ModuloInsereFactorySistema implements ModuloInsereFactory {
 

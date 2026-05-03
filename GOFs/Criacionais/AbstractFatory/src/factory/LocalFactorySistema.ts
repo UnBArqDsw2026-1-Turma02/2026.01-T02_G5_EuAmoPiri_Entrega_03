@@ -1,7 +1,7 @@
 import { LocalFactory } from "./LocalFactory";
-import { Local } from "../domain/local/Local";
-import { Estabelecimento } from "../domain/local/Estabelecimento";
-import { PontoTuristico } from "../domain/local/PontoTuristico";
+import { Local } from "../regras/local/Local";
+import { Estabelecimento } from "../regras/local/Estabelecimento";
+import { PontoTuristico } from "../regras/local/PontoTuristico";
 
 export class LocalFactorySistema implements LocalFactory {
 
