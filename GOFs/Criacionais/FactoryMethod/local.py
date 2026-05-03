@@ -1,11 +1,14 @@
-class Local:
+from abc import ABC, abstractmethod
+
+class Local(ABC):
     def __init__(self, nome, descricao, endereco):
         self.nome = nome
         self.descricao = descricao
         self.endereco = endereco
 
+    @abstractmethod
     def exibir_informacoes(self):
-        raise NotImplementedError()
+        pass
 
 
 class PontoTuristico(Local):
