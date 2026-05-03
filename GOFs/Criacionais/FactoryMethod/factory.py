@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from local import PontoTuristico, Estabelecimento
 
 
-#interface
+# interface
 class CriadorLocal(ABC):
     @abstractmethod
     def factory_method(self, **kwargs):
@@ -13,20 +13,24 @@ class CriadorLocal(ABC):
         # Exemplo de "Negócio Real": Logar a criação ou validar dados
         return objeto.exibir_informacoes()
 
-#implementaçao 
+# implementaçao
+
+
 class CriadorPonto(CriadorLocal):
     def factory_method(self, **kwargs):
         return PontoTuristico(**kwargs)
+
 
 class CriadorEstabelecimento(CriadorLocal):
     def factory_method(self, **kwargs):
         return Estabelecimento(**kwargs)
 
+
 class LocalFactory:
     _tipos = {
         "ponto_turistico": CriadorPonto,
         "estabelecimento": CriadorEstabelecimento,
-        # Adicionar novos tipos aqui sem mexer na lógica 
+        # Adicionar novos tipos aqui sem mexer na lógica
     }
 
     @staticmethod
@@ -37,4 +41,4 @@ class LocalFactory:
 
         # Retornamos o OBJETO pronto para uso (via factory_method).
         # Se quiser usar a lógica de 'processar', mudamos para .processar(**kwargs)
-        return fabrica_classe().factory_method(**kwargs)
+        return classe().factory_method(**kwargs)
