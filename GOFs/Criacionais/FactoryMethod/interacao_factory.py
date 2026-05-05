@@ -1,30 +1,35 @@
+from abc import ABC, abstractmethod
 from interacao import Comentario, RespostaComentario, DenunciaComentario
 
+# interface
+class CriadorInteracao(ABC):
+    @abstractmethod
+    def factory_method(self, **kwargs):
+        pass
 
-class InteracaoFactory:
+    def processar(self, **kwargs):
+        objeto = self.factory_method(**kwargs)
+        return objeto.exibir()
 
-    @staticmethod
-    def criar_interacao(dados):
-        tipo = dados.get("tipo")
 
-        if tipo == "comentario":
-            return Comentario(
-                dados.get("autor"),
-                dados.get("conteudo")
-            )
+# implementações
+class CriadorComentario(CriadorInteracao):
+    def factory_method(self, **kwargs):
+        return Comentario(kwargs.get("autor"), kwargs.get("conteudo"))
 
-        if tipo == "resposta":
-            return RespostaComentario(
-                dados.get("autor"),
-                dados.get("conteudo"),
-                dados.get("comentario_original")
-            )
 
-        if tipo == "denuncia":
-            return DenunciaComentario(
-                dados.get("autor"),
-                dados.get("conteudo"),
-                dados.get("motivo")
-            )
+class CriadorResposta(CriadorInteracao):
+    def factory_method(self, **kwargs):
+        return RespostaComentario(
+            kwargs.get("autor"),
+            kwargs.get("conteudo"),
+            kwargs.get("comentario_original")
+        )
 
-        raise ValueError("Tipo de interação inválido")
+class CriadorDenuncia(CriadorInteracao):
+    def factory_method(self, **kwargs):
+        return DenunciaComentario(
+            kwargs.get("autor"),
+            kwargs.get("conteudo"),
+            kwargs.get("motivo")
+        )
