@@ -1,4 +1,4 @@
-import { ViagemFactory } from "./ViagemFactory";
+import { ViagemAbstractFactory } from "./ViagemAbstractFactory";
 import { LocalFactory } from "./LocalFactory";
 import { ModuloInsereFactory } from "./ModuloInsereFactory";
 
@@ -13,5 +13,15 @@ export class ViagemFactorySistema implements ViagemAbstractFactory {
 
     criarModuloInsereFactory(): ModuloInsereFactory {
         return new ModuloInsereFactorySistema();
+    }
+
+    criarFactory(tipo: string): LocalFactory | ModuloInsereFactory | null {
+        if (tipo === "local") {
+            return new LocalFactorySistema();
+        }
+        if (tipo === "moduloInsere") {
+            return new ModuloInsereFactorySistema();
+        }
+        return null;
     }
 }
