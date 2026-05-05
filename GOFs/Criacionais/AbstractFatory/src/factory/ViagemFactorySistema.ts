@@ -5,7 +5,7 @@ import { ModuloInsereFactory } from "./ModuloInsereFactory";
 import { LocalFactorySistema } from "./LocalFactorySistema";
 import { ModuloInsereFactorySistema } from "./ModuloInsereFactorySistema";
 
-export class ViagemFactorySistema implements ViagemFactory {
+export class ViagemFactorySistema implements ViagemAbstractFactory {
 
     criarLocalFactory(): LocalFactory {
         return new LocalFactorySistema();
