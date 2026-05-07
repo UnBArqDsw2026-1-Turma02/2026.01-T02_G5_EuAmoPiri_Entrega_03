@@ -1,19 +1,58 @@
-import { ViagemFactorySistema } from "./factory/ViagemFactorySistema";
-import { Morador } from "../../regras/usuario/Morador";
-import { Turista } from "../../regras/usuario/Turista";
+import { ViagemFactoryProvider } from "./factory/ViagemFactoryProvider";
+import { MoradorFactory } from "./factory/MoradorFactory";
 
-const factory = new ViagemFactorySistema();
+// TURISTA
 
-const morador = new Morador("João", "99999-9999", "email", "joao123", "senha");
-const turista = new Turista("Maria", "88888-8888", "email", "maria123", "senha");
+const turistaFactory =
+    ViagemFactoryProvider.criarFactory("turista");
 
-// Morador cria local
-const localFactory = factory.criarLocalFactory();
-const local = localFactory.criarLocal("estabelecimento");
-morador.cadastrarLocal(local);
+const turista = turistaFactory.criarUsuario(
+    "João",
+    "joao@email.com",
+    "123",
+    "99999-9999",
+    "joaoturista"
+);
 
-// Turista cria interação (relato)
-const insereFactory = factory.criarModuloInsereFactory();
-const interacao = insereFactory.criarInteracao("relato");
+const relato = turistaFactory.criarInteracao();
 
-console.log(interacao.criarInteracao());
+console.log("\n=== TURISTA ===");
+
+console.log(turista);
+console.log(relato.criarInteracao());
+
+
+// MORADOR
+
+const moradorFactory =
+    ViagemFactoryProvider.criarFactory("morador");
+
+const morador = moradorFactory.criarUsuario(
+    "Maria",
+    "maria@email.com",
+    "456",
+    "88888-8888",
+    "mariamoradora"
+);
+
+console.log("\n=== MORADOR ===");
+console.log(morador);
+
+if (moradorFactory instanceof MoradorFactory) { // Verificação de tipo para acessar métodos específicos isso é necessário devido à interface ViagemAbstractFactory não ter o método criarLocal
+    const local = moradorFactory.criarLocal(
+        "Cachoeira Santa Maria",
+        "Local turístico em Pirenópolis",
+        "Ponto Turístico",
+        "Zona Rural",
+        "72980000"
+    );
+
+
+    console.log("\n=== LOCAL ===");
+    console.log(local);
+}
+
+const anuncio = moradorFactory.criarInteracao();
+
+console.log("\n=== ANÚNCIO ===");
+console.log(anuncio.criarInteracao());

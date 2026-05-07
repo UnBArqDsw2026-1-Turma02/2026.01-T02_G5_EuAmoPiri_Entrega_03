@@ -1,6 +1,6 @@
-import { Pessoa } from "./Pessoa";
+import { Usuario } from "./Usuario";
 
-export class Turista extends Pessoa {
+export class UsuarioTurista extends Usuario {
 
     criarRelato(): void {
         console.log("Relato criado");

@@ -1,4 +1,4 @@
-export abstract class Pessoa {
+export abstract class Usuario {
     constructor(
         public nome: string,
         public numeroCelular: string,
