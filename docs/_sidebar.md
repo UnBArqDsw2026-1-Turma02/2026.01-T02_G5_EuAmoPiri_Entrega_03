@@ -17,7 +17,7 @@
       - [3.2.3 Composite](/PadroesDeProjeto/2_GoFsEstruturais/3.2.3.Composite_gofe.md)
       - [3.2.4 Decorator](/PadroesDeProjeto/2_GoFsEstruturais/3.2.4.Decorator_gofe.md)
       - [3.2.5 Proxy](/PadroesDeProjeto/2_GoFsEstruturais/3.2.5.Proxy_gofe.md)
-    - [3.3. Padrões de Projeto GoFs Comportamentais](/PadroesDeProjeto/3_GoFsComportamentais/3.3.GoFsComportamentais.md)
+    - [3.3. Padrões de Projeto GoFs Comportamentais](/docs/PadroesDeProjeto/3_GoFsComportamentais/3.3.GoFsComportamentais.md)
       - [3.3.1 Command](/PadroesDeProjeto/3_GoFsComportamentais/3.3.1.Command_gofco.md)
       - [3.3.2 Iterator](/PadroesDeProjeto/3_GoFsComportamentais/3.3.2.Iterator_gofco.md)
       - [3.3.3 Mediator](/PadroesDeProjeto/3_GoFsComportamentais/3.3.3.Mediator_gofco.md)
@@ -25,4 +25,3 @@
       - [3.3.5 Strategy](/PadroesDeProjeto/3_GoFsComportamentais/3.3.5.Strategy_gofco.md)
     - [3.4. Participações - Padrões de Projeto](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
     - [3.5. Iniciativas Extras - Padrões de Projeto](/PadroesDeProjeto/3.5.IniciativasExtras.md)
-      
