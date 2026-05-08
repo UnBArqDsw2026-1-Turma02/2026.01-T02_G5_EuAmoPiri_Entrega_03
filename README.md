@@ -7,7 +7,7 @@
 ## Contexto
 
 Este repositório reune todas as documentações e artefatos do grupo 05
-necessários para a realização da entrega 2 da Disciplina de Arquitetura e Desenho de Software "FGA0208" ministrada pela Prof.ª Milene Serrano - 2026.1
+necessários para a realização da entrega 3 da Disciplina de Arquitetura e Desenho de Software "FGA0208" ministrada pela Prof.ª Milene Serrano - 2026.1
 
 ## Documentação
 
