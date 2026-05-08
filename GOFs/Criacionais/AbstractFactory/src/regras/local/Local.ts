@@ -4,7 +4,7 @@ export abstract class Local {
         public descricao: string,
         public tipo: string,
         public rua: string,
-        public cep: number
+        public cep: string
     ) { }
 
     abstract exibirLocal(): void;
