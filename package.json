@@ -1,0 +1,19 @@
+{
+  "name": "2026.01-t02_g5_euamopiri_entrega_03",
+  "version": "1.0.0",
+  "description": "<br>\r <img width=\"400\" height=\"50\" alt=\"❤️ EuAmoPiri\" src=\"https://github.com/user-attachments/assets/b31d17ea-0932-4f89-9d4d-c958ca901351\" />\r <br>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^4.22.0",
+    "typescript": "^6.0.3"
+  }
+}
