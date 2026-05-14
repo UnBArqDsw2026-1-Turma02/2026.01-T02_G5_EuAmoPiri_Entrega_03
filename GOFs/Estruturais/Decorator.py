@@ -3,7 +3,8 @@ from datetime import date
 
 
 class Relato(ABC):
-    
+
+  # Componente base do padrão Decorator.
 
     def __init__(self, nome_usuario: str, relato: str, avaliacao: int):
         self._nome_usuario = nome_usuario
@@ -52,8 +53,6 @@ class RelatoConcreto(Relato):
 
     def excluir_relato(self) -> str:
         return f"Relato de '{self._nome_usuario}' excluído."
-
-
 
 
 
