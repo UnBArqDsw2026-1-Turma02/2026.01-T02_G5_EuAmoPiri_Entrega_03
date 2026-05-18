@@ -1,90 +1,58 @@
-import { ViagemFactorySistema } from "./factory/ViagemFactorySistema";
+import { ViagemFactoryProvider } from "./factory/ViagemFactoryProvider";
+import { MoradorFactory } from "./factory/MoradorFactory";
 
-// Instancia a (Abstract Factory)
-const sistema = new ViagemFactorySistema();
+// TURISTA
 
-// Cria a fábrica de locais através do sistema
-const localFactory = sistema.criarLocalFactory();
+const turistaFactory =
+    ViagemFactoryProvider.criarFactory("turista");
 
-// Cria o Estabelecimento 
-const meuBar = localFactory.criarLocal(
-    "estabelecimento",     
-    "Piri Lounge",          
-    "Melhor bar da cidade", 
-    "Lounge",               
-    "Rua Direita, 10",      
-    72980000               
+const turista = turistaFactory.criarUsuario(
+    "João",
+    "joao@email.com",
+    "123",
+    "99999-9999",
+    "joaoturista"
 );
 
-// Cria o Ponto Turístico
-const minhaCachoeira = localFactory.criarLocal(
-    "pontoturistico",      
-    "Cachoeira do Abade",   
-    "Natureza pura",        
-    "Cachoeira",            
-    "Estrada dos Pirineus", 
-    72980000               
+const relato = turistaFactory.criarInteracao();
+
+console.log("\n=== TURISTA ===");
+
+console.log(turista);
+console.log(relato.criarInteracao());
+
+
+// MORADOR
+
+const moradorFactory =
+    ViagemFactoryProvider.criarFactory("morador");
+
+const morador = moradorFactory.criarUsuario(
+    "Maria",
+    "maria@email.com",
+    "456",
+    "88888-8888",
+    "mariamoradora"
 );
 
-// Exibição
-console.log("--- Cadastro de Locais ---");
-console.log("\n");
-meuBar.exibirLocal();
-console.log("\n");
-minhaCachoeira.exibirLocal();
+console.log("\n=== MORADOR ===");
+console.log(morador);
+
+if (moradorFactory instanceof MoradorFactory) { // Verificação de tipo para acessar métodos específicos isso é necessário devido à interface ViagemAbstractFactory não ter o método criarLocal
+    const local = moradorFactory.criarLocal(
+        "Cachoeira Santa Maria",
+        "Local turístico em Pirenópolis",
+        "Ponto Turístico",
+        "Zona Rural",
+        "72980000"
+    );
 
 
+    console.log("\n=== LOCAL ===");
+    console.log(local);
+}
 
+const anuncio = moradorFactory.criarInteracao();
 
-//Deixe isso comentado//
-/*import { ViagemFactorySistema } from "./factory/ViagemFactorySistema";
-import { Morador } from "../../regras/usuario/Morador";
-import { Turista } from "../../regras/usuario/Turista";
-
-const factory = new ViagemFactorySistema();
-
-const morador = new Morador("João", "99999-9999", "email", "joao123", "senha");
-const turista = new Turista("Maria", "88888-8888", "email", "maria123", "senha");
-
-// Morador cria local
-const localFactory = factory.criarLocalFactory();
-const local = localFactory.criarLocal("estabelecimento");
-morador.cadastrarLocal(local);
-
-// Turista cria interação (relato)
-const insereFactory = factory.criarModuloInsereFactory();
-const interacao = insereFactory.criarInteracao("relato");
-
-console.log(interacao.criarInteracao());*/
-
-/*import { ViagemFactorySistema } from "./factory/ViagemFactorySistema";
-import { Morador } from "./regras/usuario/Morador";
-import { Turista } from "./regras/usuario/Turista";
-
-const factory = new ViagemFactorySistema();
-
-// Dados fictícios para teste seguindo sua lógica anterior
-const morador = new Morador("João", "99999-9999", "joao@email.com", "joao123", "senha123");
-const turista = new Turista("Maria", "88888-8888", "maria@email.com", "maria123", "senha456");
-
-// Morador cria local (usando a fábrica de fábricas)
-const localFactory = factory.criarLocalFactory();
-// Note: Ajuste os parâmetros de criarLocal para bater com o que definimos antes (nome, desc, etc)
-// No seu index.ts
-
-const local = localFactory.criarLocal(
-    "estabelecimento", // O 'tipoAcao' que o switch vai ler
-    "Piri Lounge",      // nome
-    "Bar em Piri",      // descricao
-    "Restaurante",      // tipo
-    "Rua Direita",      // rua
-    72980000            // cep
-);
-
-morador.cadastrarLocal(local);
-
-// Turista cria interação (relato)
-const insereFactory = factory.criarModuloInsereFactory();
-const interacao = insereFactory.criarInteracao("relato");
-
-console.log(interacao.criarInteracao());*/
+console.log("\n=== ANÚNCIO ===");
+console.log(anuncio.criarInteracao());
