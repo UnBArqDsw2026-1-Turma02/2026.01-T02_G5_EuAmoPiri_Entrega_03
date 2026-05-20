@@ -1,5 +1,7 @@
 //Adaptee -> Google Maps API 
 
+// Adaptee -> Google Maps API 
+
 export class GoogleMapsAPI {
     public buscarLugar(nome_local: string): object {
         return { info: "Dados brutos do Google" };

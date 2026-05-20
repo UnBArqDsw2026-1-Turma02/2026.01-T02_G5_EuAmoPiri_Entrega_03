@@ -15,6 +15,6 @@ export class SistemaEuAmoPiri {
 
 const apiGoogle = new GoogleMapsAPI();
 const adapter = new GoogleMapsAdapter(apiGoogle);
-const Sistemaeuamopiri = new SistemaEuAmoPiri();
+const sistemaEuAmoPiri = new SistemaEuAmoPiri();
 
-Sistemaeuamopiri.exibirDetalhesLocal(adapter);
+sistemaEuAmoPiri.exibirDetalhesLocal(adapter);

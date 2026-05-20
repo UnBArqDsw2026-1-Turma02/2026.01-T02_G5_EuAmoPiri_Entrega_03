@@ -11,7 +11,6 @@ export class GoogleMapsAdapter implements ILocalInfo {
     }
 
     public obter_nome(): string {
-
         return "Local através do Google Maps";
     }
 
