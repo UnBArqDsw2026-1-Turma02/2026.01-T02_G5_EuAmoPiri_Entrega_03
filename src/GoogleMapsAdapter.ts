@@ -1,9 +1,10 @@
-//Adapter -> GoogleMapsAPI
+// Classe responsável por adaptar a API externa
 
 import { ILocalInfo } from './ILocalInfo';
 import { GoogleMapsAPI } from './GoogleMapsAPI';
 
 export class GoogleMapsAdapter implements ILocalInfo {
+
     private google_api: GoogleMapsAPI;
 
     constructor(api: GoogleMapsAPI) {
@@ -11,11 +12,11 @@ export class GoogleMapsAdapter implements ILocalInfo {
     }
 
     public obter_nome(): string {
-        return "Local através do Google Maps";
+        return this.google_api.obterNomeLocal();
     }
 
     public obter_descricao(): string {
-        return "Descrição adaptada da API externa";
+        return this.google_api.obterDescricaoLocal();
     }
 
     public obter_endereco(): string {
@@ -24,9 +25,5 @@ export class GoogleMapsAdapter implements ILocalInfo {
 
     public obter_coordenadas(): [number, number] {
         return this.google_api.obterLocalizacaoGPS();
-    }
-
-    public obter_avaliacoes(): string[] {
-        return this.google_api.obterAvaliacoes();
     }
 }
