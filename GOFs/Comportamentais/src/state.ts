@@ -22,7 +22,7 @@ class ComentarioRascunho extends StateComentario {
 
   override validarConteudo(ctx: Comentario): void {
     console.log("[Rascunho] Conteúdo validado com sucesso.");
-  }
+  } 
 
   // Avança para o próximo estado instanciando ele diretamente
   override avancar(ctx: Comentario): void {
