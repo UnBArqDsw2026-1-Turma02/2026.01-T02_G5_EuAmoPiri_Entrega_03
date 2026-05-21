@@ -25,5 +25,5 @@
       - [3.3.5 Strategy](/PadroesDeProjeto/3_GoFsComportamentais/3.3.5.Strategy_gofco.md)
     - [3.4. Participações - Padrões de Projeto](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
     - [3.5. Iniciativas Extras - Padrões de Projeto](/PadroesDeProjeto/IniciativasExtras/3.5.IniciativasExtras.md)
-      - [3.5.1. Modelagem Estática - Diagrama de Implantação](/PadroesDeProjeto/IniciativasExtras/Unidade02/3.5.1.Diagrama_de_Implantacao.md)
-      - [3.5.2. Modelagem Estática - Diagrama de Implantação](/PadroesDeProjeto/IniciativasExtras/Unidade02/3.5.2.Diagrama_de_Atividades.md)
+      - [3.5.3. Modelagem Estática - Diagrama de Implantação](/PadroesDeProjeto/IniciativasExtras/Unidade02/3.5.1.Diagrama_de_Implantacao.md)
+      - [3.5.4. Modelagem Estática - Diagrama de Implantação](/PadroesDeProjeto/IniciativasExtras/Unidade02/3.5.2.Diagrama_de_Atividades.md)
