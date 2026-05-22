@@ -25,3 +25,5 @@
       - [3.3.5 Strategy](/PadroesDeProjeto/3_GoFsComportamentais/3.3.5.Strategy_gofco.md)
     - [3.4. Participações - Padrões de Projeto](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
     - [3.5. Iniciativas Extras - Padrões de Projeto](/PadroesDeProjeto/3.5.IniciativasExtras.md)
+      - [3.5.1. Ata de Reunião 1](/PadroesDeProjeto/3.5.1.AtaReuniao1.md)
+      - [3.5.2. Ata de Reunião 2](/PadroesDeProjeto/3.5.2.AtaReuniao2.md)
