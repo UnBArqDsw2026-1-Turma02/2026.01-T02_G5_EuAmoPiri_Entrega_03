@@ -4,25 +4,28 @@
 - [Projetos](/Projeto/Projeto.md)
 
 - **Padrões de Projeto**
-  - [3. Desenho de Software (Padrões de Projeto)](/PadroesDeProjeto/3.PadroesDeProjeto.md)
-    - [3.1. Padrões de Projeto GoFs Criacionais](/PadroesDeProjeto/1_GoFsCriacionais/3.1.GoFsCriacionais.md)
+  - .3. Desenho de Software (Padrões de Projeto)
+    - 3.1. Padrões de Projeto GoFs Criacionais
       - [3.1.1. Abstract](/PadroesDeProjeto/1_GoFsCriacionais/3.1.1.Abstract_gofcr.md)
       - [3.1.2. Builder](/PadroesDeProjeto/1_GoFsCriacionais/3.1.2.Builder_gofcr.md)
       - [3.1.3. Factory](/PadroesDeProjeto/1_GoFsCriacionais/3.1.3.Factory_gofcr.md)
       - [3.1.4. Multiton](/PadroesDeProjeto/1_GoFsCriacionais/3.1.4.Multiton_gofcr.md)
       - [3.1.5. Singleton](/PadroesDeProjeto/1_GoFsCriacionais/3.1.5.Singleton_gofcr.md)
-    - [3.2. Padrões de Projeto GoFs Estruturais](/PadroesDeProjeto/2_GoFsEstruturais/3.2.GoFsEstruturais.md)
+    - 3.2. Padrões de Projeto GoFs Estruturais
       - [3.2.1 Adapter](/PadroesDeProjeto/2_GoFsEstruturais/3.2.1.Adapter_gofe.md)
       - [3.2.2 Bridge](/PadroesDeProjeto/2_GoFsEstruturais/3.2.2.Bridge_gofe.md)
       - [3.2.3 Composite](/PadroesDeProjeto/2_GoFsEstruturais/3.2.3.Composite_gofe.md)
       - [3.2.4 Decorator](/PadroesDeProjeto/2_GoFsEstruturais/3.2.4.Decorator_gofe.md)
       - [3.2.5 Proxy](/PadroesDeProjeto/2_GoFsEstruturais/3.2.5.Proxy_gofe.md)
-    - [3.3. Padrões de Projeto GoFs Comportamentais](/PadroesDeProjeto/3_GoFsComportamentais/3.3.GoFsComportamentais.md)
+    - 3.3. Padrões de Projeto GoFs Comportamentais
       - [3.3.1 Command](/PadroesDeProjeto/3_GoFsComportamentais/3.3.1.Command_gofco.md)
       - [3.3.2 Iterator](/PadroesDeProjeto/3_GoFsComportamentais/3.3.2.Iterator_gofco.md)
       - [3.3.3 Mediator](/PadroesDeProjeto/3_GoFsComportamentais/3.3.3.Mediator_gofco.md)
       - [3.3.4 State](/PadroesDeProjeto/3_GoFsComportamentais/3.3.4.State_gofco.md)
       - [3.3.5 Strategy](/PadroesDeProjeto/3_GoFsComportamentais/3.3.5.Strategy_gofco.md)
     - [3.4. Participações - Padrões de Projeto](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
-    - [3.5. Iniciativas Extras - Padrões de Projeto](/PadroesDeProjeto/3.5.IniciativasExtras.md)
-      
+    - 3.5. Iniciativas Extras - Padrões de Projeto
+      - [3.5.1. Ata de Reunião 1](/PadroesDeProjeto/3.5.1.AtaReuniao1.md)
+      - [3.5.2. Ata de Reunião 2](/PadroesDeProjeto/3.5.2.AtaReuniao2.md)
+      - [3.5.3. Modelagem Estática - Diagrama de Implantação](/PadroesDeProjeto/IniciativasExtras/Unidade02/3.5.1.Diagrama_de_Implantacao.md)
+      - [3.5.4. Modelagem Estática - Diagrama de Atividades](/PadroesDeProjeto/IniciativasExtras/Unidade02/3.5.2.Diagrama_de_Atividades.md)
