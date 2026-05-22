@@ -16,11 +16,20 @@ and limitations under the License.
 
 /// <reference no-default-lib="true"/>
 
-/// <reference lib="es2016" />
-/// <reference lib="es2017.arraybuffer" />
-/// <reference lib="es2017.date" />
-/// <reference lib="es2017.intl" />
-/// <reference lib="es2017.object" />
-/// <reference lib="es2017.sharedmemory" />
-/// <reference lib="es2017.string" />
-/// <reference lib="es2017.typedarrays" />
+interface PromiseWithResolvers<T> {
+    promise: Promise<T>;
+    resolve: (value: T | PromiseLike<T>) => void;
+    reject: (reason?: any) => void;
+}
+
+interface PromiseConstructor {
+    /**
+     * Creates a new Promise and returns it in an object, along with its resolve and reject functions.
+     * @returns An object with the properties `promise`, `resolve`, and `reject`.
+     *
+     * ```ts
+     * const { promise, resolve, reject } = Promise.withResolvers<T>();
+     * ```
+     */
+    withResolvers<T>(): PromiseWithResolvers<T>;
+}
