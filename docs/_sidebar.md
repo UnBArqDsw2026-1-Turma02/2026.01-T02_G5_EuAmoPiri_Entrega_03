@@ -4,20 +4,20 @@
 - [Projetos](/Projeto/Projeto.md)
 
 - **Padrões de Projeto**
-  - [3. Desenho de Software (Padrões de Projeto)](/PadroesDeProjeto/3.PadroesDeProjeto.md)
-    - [3.1. Padrões de Projeto GoFs Criacionais](/PadroesDeProjeto/1_GoFsCriacionais/3.1.GoFsCriacionais.md)
+  - .3. Desenho de Software (Padrões de Projeto)
+    - 3.1. Padrões de Projeto GoFs Criacionais
       - [3.1.1. Abstract](/PadroesDeProjeto/1_GoFsCriacionais/3.1.1.Abstract_gofcr.md)
       - [3.1.2. Builder](/PadroesDeProjeto/1_GoFsCriacionais/3.1.2.Builder_gofcr.md)
       - [3.1.3. Factory](/PadroesDeProjeto/1_GoFsCriacionais/3.1.3.Factory_gofcr.md)
       - [3.1.4. Multiton](/PadroesDeProjeto/1_GoFsCriacionais/3.1.4.Multiton_gofcr.md)
       - [3.1.5. Singleton](/PadroesDeProjeto/1_GoFsCriacionais/3.1.5.Singleton_gofcr.md)
-    - [3.2. Padrões de Projeto GoFs Estruturais](/PadroesDeProjeto/2_GoFsEstruturais/3.2.GoFsEstruturais.md)
+    - 3.2. Padrões de Projeto GoFs Estruturais
       - [3.2.1 Adapter](/PadroesDeProjeto/2_GoFsEstruturais/3.2.1.Adapter_gofe.md)
       - [3.2.2 Bridge](/PadroesDeProjeto/2_GoFsEstruturais/3.2.2.Bridge_gofe.md)
       - [3.2.3 Composite](/PadroesDeProjeto/2_GoFsEstruturais/3.2.3.Composite_gofe.md)
       - [3.2.4 Decorator](/PadroesDeProjeto/2_GoFsEstruturais/3.2.4.Decorator_gofe.md)
       - [3.2.5 Proxy](/PadroesDeProjeto/2_GoFsEstruturais/3.2.5.Proxy_gofe.md)
-    - [3.3. Padrões de Projeto GoFs Comportamentais](/docs/PadroesDeProjeto/3_GoFsComportamentais/3.3.GoFsComportamentais.md)
+    - 3.3. Padrões de Projeto GoFs Comportamentais
       - [3.3.1 Command](/PadroesDeProjeto/3_GoFsComportamentais/3.3.1.Command_gofco.md)
       - [3.3.2 Iterator](/PadroesDeProjeto/3_GoFsComportamentais/3.3.2.Iterator_gofco.md)
       - [3.3.3 Mediator](/PadroesDeProjeto/3_GoFsComportamentais/3.3.3.Mediator_gofco.md)
